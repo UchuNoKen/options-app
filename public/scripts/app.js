@@ -3,8 +3,6 @@
 console.log('App.js is running');
 
 // JSX - JavaScript XML
-
-// will not render without babel
 var template = React.createElement(
   'div',
   null,
@@ -17,6 +15,20 @@ var template = React.createElement(
     'p',
     null,
     'This is some info'
+  ),
+  React.createElement(
+    'ol',
+    null,
+    React.createElement(
+      'li',
+      null,
+      'Item one'
+    ),
+    React.createElement(
+      'li',
+      null,
+      'Item two'
+    )
   )
 );
 
