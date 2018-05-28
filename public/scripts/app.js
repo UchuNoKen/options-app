@@ -8,7 +8,7 @@ console.log('App.js is running');
 var template = React.createElement(
   'h1',
   null,
-  'Is this being watched?'
+  'Indecision App'
 );
 var appRoot = document.getElementById('app');
 
