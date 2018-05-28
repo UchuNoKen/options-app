@@ -14,13 +14,15 @@ var template = (
 
 var userName = 'Bugs Bunny';
 var userAge = 21;
+var userLocation = 'Rio de Janeiro';
+
 let template2 = (
     <div>
       <h1>{userName.toUpperCase()}</h1>
       <p>Age: {userAge}</p>
-      <p>Location: Atlanta</p>
+      <p>Location: {userLocation}</p>
     </div>
-)
+);
 
 var appRoot = document.getElementById('app');
 

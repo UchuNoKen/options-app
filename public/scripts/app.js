@@ -34,6 +34,8 @@ var template = React.createElement(
 
 var userName = 'Bugs Bunny';
 var userAge = 21;
+var userLocation = 'Rio de Janeiro';
+
 var template2 = React.createElement(
   'div',
   null,
@@ -51,7 +53,8 @@ var template2 = React.createElement(
   React.createElement(
     'p',
     null,
-    'Location: Atlanta'
+    'Location: ',
+    userLocation
   )
 );
 
