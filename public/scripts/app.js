@@ -6,10 +6,20 @@ console.log('App.js is running');
 
 // will not render without babel
 var template = React.createElement(
-  'h1',
+  'div',
   null,
-  'Indecision App'
+  React.createElement(
+    'h1',
+    null,
+    'Indecision App'
+  ),
+  React.createElement(
+    'p',
+    null,
+    'This is some info'
+  )
 );
+
 var appRoot = document.getElementById('app');
 
 ReactDOM.render(template, appRoot);
