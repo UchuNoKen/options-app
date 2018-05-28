@@ -32,18 +32,21 @@ var template = React.createElement(
   )
 );
 
+var userName = 'Bugs Bunny';
+var userAge = 21;
 var template2 = React.createElement(
   'div',
   null,
   React.createElement(
     'h1',
     null,
-    'Ya boy!'
+    userName.toUpperCase()
   ),
   React.createElement(
     'p',
     null,
-    'Age: 31'
+    'Age: ',
+    userAge
   ),
   React.createElement(
     'p',
