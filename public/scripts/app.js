@@ -6,7 +6,7 @@ console.log('App.js is running');
 
 // will not render without babel
 var template = React.createElement(
-  'p',
+  'h1',
   null,
   'Is this being watched?'
 );
