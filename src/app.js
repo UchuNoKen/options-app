@@ -12,6 +12,12 @@ var template = (
   </div>
 );
 
+// var user = {
+//     name: Pistol Pete,
+//     age: 38,
+//     location: Tombstone, AZ
+// };
+
 var userName = 'Bugs Bunny';
 var userAge = 21;
 var userLocation = 'Rio de Janeiro';
