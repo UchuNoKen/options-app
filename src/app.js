@@ -31,7 +31,7 @@ function getLocation(location){
 
 let template2 = (
     <div>
-      <h1>{user.name}</h1>
+      <h1>{user.name ? user.name : 'Anonymous'}</h1>
       <p>Age: {user.age}</p>
       {getLocation(user.location)}
     </div>
