@@ -12,11 +12,6 @@ var template = (
   </div>
 );
 
-var app = {
-    title: "Black Panther",
-    subtitle: "Wakanda Forever"
-};
-
 var user = {
     name: 'Pistol Pete',
     age: 18,
@@ -36,6 +31,12 @@ let template2 = (
       {getLocation(user.location)}
     </div>
 );
+
+var app = {
+  title: "Black Panther",
+  subtitle: "Wakanda Forever",
+  options: ['One', 'Two']
+};
 
 let template3 = (
     <div>

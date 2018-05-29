@@ -1,41 +1,36 @@
-"use strict";
+'use strict';
 
 console.log('App.js is running');
 
 // JSX - JavaScript XML
 var template = React.createElement(
-  "div",
+  'div',
   null,
   React.createElement(
-    "h1",
+    'h1',
     null,
-    "Indecision App"
+    'Indecision App'
   ),
   React.createElement(
-    "p",
+    'p',
     null,
-    "This is some info"
+    'This is some info'
   ),
   React.createElement(
-    "ol",
+    'ol',
     null,
     React.createElement(
-      "li",
+      'li',
       null,
-      "Item one"
+      'Item one'
     ),
     React.createElement(
-      "li",
+      'li',
       null,
-      "Item two"
+      'Item two'
     )
   )
 );
-
-var app = {
-  title: "Black Panther",
-  subtitle: "Wakanda Forever"
-};
 
 var user = {
   name: 'Pistol Pete',
@@ -46,41 +41,47 @@ var user = {
 function getLocation(location) {
   if (location) {
     return React.createElement(
-      "p",
+      'p',
       null,
-      "Location: ",
+      'Location: ',
       location
     );
   }
 }
 
 var template2 = React.createElement(
-  "div",
+  'div',
   null,
   React.createElement(
-    "h1",
+    'h1',
     null,
     user.name ? user.name : 'Anonymous'
   ),
   user.age && user.age >= 18 && React.createElement(
-    "p",
+    'p',
     null,
-    "Age: ",
+    'Age: ',
     user.age
   ),
   getLocation(user.location)
 );
 
+var app = {
+  title: "Black Panther",
+  subtitle: "Wakanda Forever",
+  options: ['One', 'Two']
+};
+
 var template3 = React.createElement(
-  "div",
+  'div',
   null,
   React.createElement(
-    "h1",
+    'h1',
     null,
     app.title
   ),
   React.createElement(
-    "p",
+    'p',
     null,
     app.subtitle
   )
