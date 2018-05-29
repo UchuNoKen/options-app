@@ -39,7 +39,7 @@ var app = {
 
 var user = {
   name: 'Pistol Pete',
-  age: 38,
+  age: 18,
   location: 'Tombstone, AZ'
 };
 
@@ -62,7 +62,7 @@ var template2 = React.createElement(
     null,
     user.name ? user.name : 'Anonymous'
   ),
-  React.createElement(
+  user.age && user.age >= 18 && React.createElement(
     "p",
     null,
     "Age: ",

@@ -19,7 +19,7 @@ var app = {
 
 var user = {
     name: 'Pistol Pete',
-    age: 38,
+    age: 18,
     location: 'Tombstone, AZ'
 };
 
@@ -32,7 +32,7 @@ function getLocation(location){
 let template2 = (
     <div>
       <h1>{user.name ? user.name : 'Anonymous'}</h1>
-      <p>Age: {user.age}</p>
+      {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
       {getLocation(user.location)}
     </div>
 );
