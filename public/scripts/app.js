@@ -39,9 +39,17 @@ var app = {
 
 var user = {
   name: 'Pistol Pete',
-  age: 38,
-  location: 'Tombstone, AZ'
+  age: 38
+  // location: 'Tombstone, AZ'
 };
+
+function getLocation(location) {
+  if (location) {
+    return location;
+  } else {
+    return 'No idea';
+  }
+}
 
 var template2 = React.createElement(
   "div",
@@ -61,7 +69,7 @@ var template2 = React.createElement(
     "p",
     null,
     "Location: ",
-    user.location
+    getLocation(user.location)
   )
 );
 
@@ -82,4 +90,4 @@ var template3 = React.createElement(
 
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(template3, appRoot);
+ReactDOM.render(template2, appRoot);
