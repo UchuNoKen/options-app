@@ -20,14 +20,12 @@ var app = {
 var user = {
     name: 'Pistol Pete',
     age: 38,
-    // location: 'Tombstone, AZ'
+    location: 'Tombstone, AZ'
 };
 
 function getLocation(location){
   if(location){
-    return location;
-  }else{
-    return 'No idea';
+    return <p>Location: {location}</p>;
   }
 }
 
@@ -35,7 +33,7 @@ let template2 = (
     <div>
       <h1>{user.name}</h1>
       <p>Age: {user.age}</p>
-      <p>Location: {getLocation(user.location)}</p>
+      {getLocation(user.location)}
     </div>
 );
 
