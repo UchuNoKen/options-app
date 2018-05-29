@@ -67,8 +67,8 @@ var template2 = React.createElement(
 );
 
 var app = {
-  title: "Black Panther",
-  subtitle: "Wakanda Forever",
+  title: 'Indecision App',
+  subtitle: "Put your life in the hands of technology",
   options: ['One', 'Two']
 };
 
@@ -80,13 +80,18 @@ var template3 = React.createElement(
     null,
     app.title
   ),
-  React.createElement(
+  app.subtitle && React.createElement(
     'p',
     null,
     app.subtitle
+  ),
+  React.createElement(
+    'p',
+    null,
+    app.options.length > 0 ? 'Here are your options' : 'No options available'
   )
 );
 
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(template2, appRoot);
+ReactDOM.render(template3, appRoot);
