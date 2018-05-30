@@ -12,40 +12,15 @@ const template = (
   </div>
 ); 
 
-const user = {
-    name: 'Pistol Pete',
-    age: 18,
-    location: 'Tombstone, AZ'
-};
-
-function getLocation(location){
-  if(location){
-    return <p>Location: {location}</p>;
-  }
-}
-
+let count = 0;
 const template2 = (
-    <div>
-      <h1>{user.name ? user.name : 'Anonymous'}</h1>
-      {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
-      {getLocation(user.location)}
-    </div>
+  <div>
+    <h1>Count: {count}</h1>
+    <button id='my-id' className='button'>+1</button>
+  </div>
 );
 
-const app = {
-  title: 'Indecision App',
-  subtitle: "Put your life in the hands of technology",
-  options: ['One', 'Two']
-};
-
-const template3 = (
-    <div>
-      <h1>{app.title}</h1>
-      {app.subtitle && <p>{app.subtitle}</p>}
-      <p>{app.options.length > 0 ? 'Here are your options' : 'No options available'}</p>
-    </div>
-)
-
+console.log(template2);
 const appRoot = document.getElementById('app');
 
-ReactDOM.render(template3, appRoot);
+ReactDOM.render(template2, appRoot);
