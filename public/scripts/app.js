@@ -48,7 +48,9 @@ var template2 = React.createElement(
   ),
   React.createElement(
     'button',
-    { onClick: addOne },
+    { onClick: function onClick() {
+        console.log('some value here');
+      } },
     '+1'
   )
 );
