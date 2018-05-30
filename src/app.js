@@ -10,7 +10,7 @@ var template = (
       <li>Item two</li>
     </ol>
   </div>
-);
+); 
 
 var user = {
     name: 'Pistol Pete',
