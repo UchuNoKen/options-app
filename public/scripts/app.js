@@ -33,9 +33,19 @@ var template = React.createElement(
 );
 
 var count = 0;
+
 var addOne = function addOne() {
   console.log('addOne');
 };
+
+var minusOne = function minusOne() {
+  console.log('minusOne');
+};
+
+var reset = function reset() {
+  console.log('reset');
+};
+
 var someID = 'myidhere';
 var template2 = React.createElement(
   'div',
@@ -48,10 +58,18 @@ var template2 = React.createElement(
   ),
   React.createElement(
     'button',
-    { onClick: function onClick() {
-        console.log('some value here');
-      } },
+    { onClick: addOne },
     '+1'
+  ),
+  React.createElement(
+    'button',
+    { onClick: minusOne },
+    '-1'
+  ),
+  React.createElement(
+    'button',
+    { onClick: reset },
+    'reset'
   )
 );
 
