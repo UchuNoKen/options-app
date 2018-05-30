@@ -2,6 +2,12 @@
 
 console.log('App.js is running');
 
+var app = {
+  title: 'Indecision App',
+  subtitle: 'Your life, in the hands of technology',
+  options: ['One', 'Two']
+};
+
 // JSX - JavaScript XML
 var template = React.createElement(
   'div',
@@ -9,12 +15,17 @@ var template = React.createElement(
   React.createElement(
     'h1',
     null,
-    'Indecision App'
+    app.title
+  ),
+  app.subtitle && React.createElement(
+    'p',
+    null,
+    app.subtitle
   ),
   React.createElement(
     'p',
     null,
-    'This is some info'
+    app.options.length > 0 ? 'Here are your options' : 'No options'
   ),
   React.createElement(
     'ol',
@@ -32,56 +43,6 @@ var template = React.createElement(
   )
 );
 
-var count = 0;
-
-var addOne = function addOne() {
-  count++;
-  renderCounterApp();
-  console.log('addOne', count);
-};
-
-var minusOne = function minusOne() {
-  count--;
-  console.log('minusOne');
-  renderCounterApp();
-};
-
-var reset = function reset() {
-  count = 0;
-  console.log('reset');
-  renderCounterApp();
-};
-
 var appRoot = document.getElementById('app');
 
-var renderCounterApp = function renderCounterApp() {
-  var template2 = React.createElement(
-    'div',
-    null,
-    React.createElement(
-      'h1',
-      null,
-      'Count: ',
-      count
-    ),
-    React.createElement(
-      'button',
-      { onClick: addOne },
-      '+1'
-    ),
-    React.createElement(
-      'button',
-      { onClick: minusOne },
-      '-1'
-    ),
-    React.createElement(
-      'button',
-      { onClick: reset },
-      'reset'
-    )
-  );
-
-  ReactDOM.render(template2, appRoot);
-};
-
-renderCounterApp();
+ReactDOM.render(template, appRoot);

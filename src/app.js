@@ -1,10 +1,17 @@
 console.log('App.js is running');
 
+const app = {
+  title: 'Indecision App',
+  subtitle: 'Your life, in the hands of technology',
+  options: ['One', 'Two']
+};
+
 // JSX - JavaScript XML
 const template = (
   <div>
-    <h1>Indecision App</h1>
-    <p>This is some info</p>
+    <h1>{app.title}</h1>
+    {app.subtitle && <p>{app.subtitle}</p>}
+    <p>{app.options.length > 0 ? 'Here are your options' : 'No options'}</p>
     <ol>
       <li>Item one</li>
       <li>Item two</li>
@@ -12,39 +19,6 @@ const template = (
   </div>
 ); 
 
-let count = 0;
-
-const addOne = () => {
-  count++;
-  renderCounterApp();
-  console.log('addOne', count);
-};
-
-const minusOne = () => {
-  count--;
-  console.log('minusOne');
-  renderCounterApp();
-};
-
-const reset = () => {
-  count = 0;
-  console.log('reset');
-  renderCounterApp();
-};
-
 const appRoot = document.getElementById('app');
 
-const renderCounterApp = () => {
-  const template2 = (
-    <div>
-      <h1>Count: {count}</h1>
-      <button onClick={addOne}>+1</button>
-      <button onClick={minusOne}>-1</button>
-      <button onClick={reset}>reset</button>
-    </div>
-  );
-
-  ReactDOM.render(template2, appRoot);
-};
-
-renderCounterApp();
+ReactDOM.render(template, appRoot);
