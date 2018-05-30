@@ -13,10 +13,11 @@ const template = (
 ); 
 
 let count = 0;
+const someID = 'myidhere'
 const template2 = (
   <div>
     <h1>Count: {count}</h1>
-    <button id='my-id' className='button'>+1</button>
+    <button id={someId} className='button'>+1</button>
   </div>
 );
 
