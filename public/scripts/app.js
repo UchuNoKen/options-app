@@ -33,6 +33,9 @@ var template = React.createElement(
 );
 
 var count = 0;
+var addOne = function addOne() {
+  console.log('addOne');
+};
 var someID = 'myidhere';
 var template2 = React.createElement(
   'div',
@@ -45,7 +48,7 @@ var template2 = React.createElement(
   ),
   React.createElement(
     'button',
-    { id: someId, className: 'button' },
+    { onClick: addOne },
     '+1'
   )
 );
