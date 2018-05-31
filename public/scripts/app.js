@@ -39,6 +39,8 @@ var jsx = React.createElement(
     null,
     'Title'
   ),
+  React.createElement(Header, null),
+  React.createElement(Header, null),
   React.createElement(Header, null)
 );
 
