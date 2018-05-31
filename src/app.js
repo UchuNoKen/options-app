@@ -38,7 +38,7 @@ const render = () => {
       <p>{app.options.length}</p>
       <button onClick={onRemoveAll}>Remove All</button>
       {
-        [99, 98, 97] // equivalent to {99}{98}{97}
+        [99, 98, 97, 'Joe Blow', null, undefined, true]
       }
       <ol>
         <li>Item one</li>

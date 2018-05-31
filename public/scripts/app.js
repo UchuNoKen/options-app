@@ -60,8 +60,7 @@ var render = function render() {
       { onClick: onRemoveAll },
       'Remove All'
     ),
-    [99, 98, 97] // equivalent to {99}{98}{97}
-    ,
+    [99, 98, 97, 'Joe Blow', null, undefined, true],
     React.createElement(
       'ol',
       null,
