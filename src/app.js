@@ -29,6 +29,8 @@ const onRemoveAll = () => {
 
 const appRoot = document.getElementById('app');
 
+
+
 const render = () => {
   const template = (
     <div>
@@ -38,7 +40,7 @@ const render = () => {
       <p>{app.options.length}</p>
       <button onClick={onRemoveAll}>Remove All</button>
       {
-        [99, 98, 97, 'Joe Blow', null, undefined, true]
+        [<p key='1'>a</p>, <p key='2'>b</p>, <p key='3'>c</p>]
       }
       <ol>
         <li>Item one</li>
