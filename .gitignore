@@ -1,0 +1,22 @@
+# npm debugging logs
+npm-debug.log*
+
+# project dependencies
+node_modules
+
+# OSX folder attributes
+.DS_Store
+
+# temporary files
+*.tmp
+*~
+
+# yarn error logs
+yarn-error.log*
+
+# notes file
+notes.txt*
+live-server.txt*
+
+# playground directory
+playground/
