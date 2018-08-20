@@ -1,5 +1,6 @@
 # npm debugging logs
 npm-debug.log*
+.gitignore
 
 # project dependencies
 node_modules
@@ -20,3 +21,6 @@ live-server.txt*
 
 # playground directory
 playground/
+
+# webpack bundled file
+public/bundle.js
